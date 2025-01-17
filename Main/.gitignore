@@ -1,0 +1,15 @@
+# macOS system files
+.DS_Store
+
+# Xcode
+*.xcuserdata
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Build artifacts
+DerivedData/
+build/
+
+# CocoaPods
+Pods/

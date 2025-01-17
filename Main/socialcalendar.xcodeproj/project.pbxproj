@@ -18,12 +18,12 @@
 
 /* Begin PBXFileReference section */
 		4167B6F22D3A983200643028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4167B6F42D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Login.storyboard; sourceTree = "<group>"; };
+		4167B6F52D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E4B2D3A939800CAF61B /* socialcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D74E4E2D3A939800CAF61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D74E522D3A939800CAF61B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		41D74E552D3A939800CAF61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		41D74E572D3A939900CAF61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41D74E5A2D3A939900CAF61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E5C2D3A939900CAF61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A9AA6DF262C683047F490B8 /* Pods-socialcalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.debug.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		6104C178501AF922D501A9B2 /* Pods-socialcalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.release.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 41D74E422D3A939800CAF61B;
 			productRefGroup = 41D74E4C2D3A939800CAF61B /* Products */;
@@ -234,7 +233,7 @@
 		41D74E542D3A939800CAF61B /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41D74E552D3A939800CAF61B /* Base */,
+				4167B6F42D3A9B2900643028 /* en */,
 			);
 			name = Login.storyboard;
 			sourceTree = "<group>";
@@ -242,7 +241,7 @@
 		41D74E592D3A939900CAF61B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41D74E5A2D3A939900CAF61B /* Base */,
+				4167B6F52D3A9B2900643028 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
