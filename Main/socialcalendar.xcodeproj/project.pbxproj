@@ -13,6 +13,8 @@
 		41D74E562D3A939800CAF61B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E542D3A939800CAF61B /* Login.storyboard */; };
 		41D74E582D3A939900CAF61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E572D3A939900CAF61B /* Assets.xcassets */; };
 		41D74E5B2D3A939900CAF61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E592D3A939900CAF61B /* LaunchScreen.storyboard */; };
+		41DD4EA32D3FAF8800A01183 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */; };
+		41DD4EA62D3FBE6B00A01183 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */; };
 		8D8A047F36E286478AC2459B /* Pods_socialcalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07C3640D79C79EDD10EC023 /* Pods_socialcalendar.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		41D74E522D3A939800CAF61B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		41D74E572D3A939900CAF61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D74E5C2D3A939900CAF61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5A9AA6DF262C683047F490B8 /* Pods-socialcalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.debug.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		6104C178501AF922D501A9B2 /* Pods-socialcalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.release.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.release.xcconfig"; sourceTree = "<group>"; };
 		C07C3640D79C79EDD10EC023 /* Pods_socialcalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialcalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,13 +85,23 @@
 		41D74E4D2D3A939800CAF61B /* socialcalendar */ = {
 			isa = PBXGroup;
 			children = (
+				41DD4EA42D3FBE5500A01183 /* Extensions */,
 				4167B6F12D3A943600643028 /* XibsAndStoryboards */,
 				41D74E4E2D3A939800CAF61B /* AppDelegate.swift */,
 				41D74E522D3A939800CAF61B /* LoginViewController.swift */,
 				41D74E5C2D3A939900CAF61B /* Info.plist */,
 				41102CE82D3C03780064E10F /* GoogleService-Info.plist */,
+				41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */,
 			);
 			path = socialcalendar;
+			sourceTree = "<group>";
+		};
+		41DD4EA42D3FBE5500A01183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9B46CB66080934AAF4501C01 /* Pods */ = {
@@ -222,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DD4EA32D3FAF8800A01183 /* AppCoordinator.swift in Sources */,
 				41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */,
+				41DD4EA62D3FBE6B00A01183 /* UIViewController+Extension.swift in Sources */,
 				41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

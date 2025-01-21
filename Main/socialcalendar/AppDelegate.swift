@@ -10,16 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+    var coordinator: AppCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        // Move to app coordinator
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let rootViewController = storyboard.instantiateInitialViewController()
-        window!.rootViewController = rootViewController
-        window!.makeKeyAndVisible()
+        coordinator = AppCoordinator(window: UIWindow(frame: UIScreen.main.bounds))
         return true
     }
 }

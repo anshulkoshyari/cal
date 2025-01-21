@@ -7,5 +7,4 @@ target 'socialcalendar' do
   # Firebase pod
   pod 'Firebase/Auth'
   pod 'FirebaseAnalytics'
-  pod 'FirebaseFirestore'
 end
