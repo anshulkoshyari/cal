@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4167B6F32D3A983200643028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4167B6F22D3A983200643028 /* GoogleService-Info.plist */; };
+		41102CE92D3C03780064E10F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41102CE82D3C03780064E10F /* GoogleService-Info.plist */; };
 		41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E4E2D3A939800CAF61B /* AppDelegate.swift */; };
 		41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E522D3A939800CAF61B /* LoginViewController.swift */; };
 		41D74E562D3A939800CAF61B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E542D3A939800CAF61B /* Login.storyboard */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4167B6F22D3A983200643028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41102CE82D3C03780064E10F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4167B6F42D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Login.storyboard; sourceTree = "<group>"; };
 		4167B6F52D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E4B2D3A939800CAF61B /* socialcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +85,7 @@
 				41D74E4E2D3A939800CAF61B /* AppDelegate.swift */,
 				41D74E522D3A939800CAF61B /* LoginViewController.swift */,
 				41D74E5C2D3A939900CAF61B /* Info.plist */,
-				4167B6F22D3A983200643028 /* GoogleService-Info.plist */,
+				41102CE82D3C03780064E10F /* GoogleService-Info.plist */,
 			);
 			path = socialcalendar;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D74E5B2D3A939900CAF61B /* LaunchScreen.storyboard in Resources */,
-				4167B6F32D3A983200643028 /* GoogleService-Info.plist in Resources */,
+				41102CE92D3C03780064E10F /* GoogleService-Info.plist in Resources */,
 				41D74E582D3A939900CAF61B /* Assets.xcassets in Resources */,
 				41D74E562D3A939800CAF61B /* Login.storyboard in Resources */,
 			);

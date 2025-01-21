@@ -5,7 +5,7 @@
 //  Created by AK on 17/01/25.
 //
 
-import Firebase
+import FirebaseCore
 import UIKit
 
 @UIApplicationMain
