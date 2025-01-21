@@ -78,16 +78,18 @@ class LoginViewController: UIViewController {
                         self?.errorLabel.text = otpVerifyErrorText
                         return
                     }
-                    strong.presentFeedViewController(for: user)
+                    strong.didLogin(for: user)
                 }
             }
         }
     }
     
-    private func presentFeedViewController(for user: User) {
-        let controller: FeedViewController = .load(from: .feed)
-        controller.viewModel = FeedViewModel(user: user)
-        self.present(controller, animated: true)
+    private func didLogin(for user: User) {
+        guard
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+            let coordinator = appDelegate.coordinator
+        else { return }
+        coordinator.rootScene = .feed(user)
     }
     
     private func emptyErrorLabel() {

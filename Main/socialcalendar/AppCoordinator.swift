@@ -17,7 +17,11 @@ enum RootScene {
 
 class AppCoordinator {
     private var window: UIWindow
-    private var rootScene: RootScene
+    var rootScene: RootScene {
+        didSet {
+            window.rootViewController = create(scene: rootScene)
+        }
+    }
     
     init(window: UIWindow) {
         self.window = window
@@ -26,10 +30,6 @@ class AppCoordinator {
         } else {
             self.rootScene = .login
         }
-        start()
-    }
-    
-    private func start() {
         window.rootViewController = create(scene: rootScene)
         window.makeKeyAndVisible()
     }
