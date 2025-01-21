@@ -7,8 +7,9 @@
 
 import FirebaseAuth
 
+private let verificationIDKey: String = "FirebaseVerificationID"
+
 class LoginViewModel {
-    
     func sendOTP(to phoneNumber: String, completion: @escaping (Bool) -> ()) {
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
             guard let verificationID = verificationID, error == nil else {
@@ -16,13 +17,13 @@ class LoginViewModel {
                 completion(false)
                 return
             }
-            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            UserDefaults.standard.set(verificationID, forKey: verificationIDKey)
             completion(true)
         }
     }
     
     func verifyOTP(_ otp: String, completion: @escaping (User?) -> ()) {
-        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else {
+        guard let verificationID = UserDefaults.standard.string(forKey: verificationIDKey) else {
             print("CM: Verification ID not found in User Defaults.")
             completion(nil)
             return
