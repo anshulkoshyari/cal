@@ -39,13 +39,13 @@ class AppCoordinator {
         case .login:
             print("CM: Set root window to login screen.")
             let controller: LoginViewController = .load(from: .login)
+            controller.viewModel = LoginViewModel()
             return UINavigationController(rootViewController: controller)
             
         case .feed(let user):
             print("CM: Set root window to feed screen.")
-            // let controller: FeedViewController = .load(from: .feed)
-            let controller = UIViewController()
-            controller.view.backgroundColor = .green
+            let controller: FeedViewController = .load(from: .feed)
+            controller.viewModel = FeedViewModel(user: user)
             return UINavigationController(rootViewController: controller)
         }
     }

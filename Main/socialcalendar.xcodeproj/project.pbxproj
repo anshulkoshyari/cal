@@ -10,6 +10,8 @@
 		41102CE92D3C03780064E10F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41102CE82D3C03780064E10F /* GoogleService-Info.plist */; };
 		41662CF82D3FE69400A186A1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CF72D3FE69400A186A1 /* FeedViewController.swift */; };
 		41662CFA2D3FE6B300A186A1 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41662CF92D3FE6B300A186A1 /* Feed.storyboard */; };
+		41662CFC2D3FE7B600A186A1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */; };
+		41662CFE2D3FE99800A186A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CFD2D3FE99800A186A1 /* LoginViewModel.swift */; };
 		41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E4E2D3A939800CAF61B /* AppDelegate.swift */; };
 		41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E522D3A939800CAF61B /* LoginViewController.swift */; };
 		41D74E562D3A939800CAF61B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E542D3A939800CAF61B /* Login.storyboard */; };
@@ -24,6 +26,8 @@
 		41102CE82D3C03780064E10F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41662CF72D3FE69400A186A1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		41662CF92D3FE6B300A186A1 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		41662CFD2D3FE99800A186A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4167B6F42D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Login.storyboard; sourceTree = "<group>"; };
 		4167B6F52D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E4B2D3A939800CAF61B /* socialcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				41D74E522D3A939800CAF61B /* LoginViewController.swift */,
+				41662CFD2D3FE99800A186A1 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -62,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				41662CF72D3FE69400A186A1 /* FeedViewController.swift */,
+				41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -261,9 +267,11 @@
 			files = (
 				41DD4EA32D3FAF8800A01183 /* AppCoordinator.swift in Sources */,
 				41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */,
+				41662CFC2D3FE7B600A186A1 /* FeedViewModel.swift in Sources */,
 				41662CF82D3FE69400A186A1 /* FeedViewController.swift in Sources */,
 				41DD4EA62D3FBE6B00A01183 /* UIViewController+Extension.swift in Sources */,
 				41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */,
+				41662CFE2D3FE99800A186A1 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

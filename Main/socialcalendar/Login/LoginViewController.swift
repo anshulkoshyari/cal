@@ -20,6 +20,8 @@ private enum LoginScene {
 }
 
 class LoginViewController: UIViewController {
+    var viewModel: LoginViewModel!
+    
     @IBOutlet private weak var loginLabel: UILabel!
     @IBOutlet private weak var phoneNumberTextField: UITextField!
     @IBOutlet private weak var otpBtn: UIButton!
@@ -58,50 +60,38 @@ class LoginViewController: UIViewController {
                 errorLabel.text = emptyPhoneNumberErrorText
                 return
             }
-            sendOTP(to: phoneNumber)
+            viewModel.sendOTP(to: "+91\(phoneNumber)") { [weak self] result in
+                guard let strong = self, result else {
+                    self?.errorLabel.text = otpSendErrorText
+                    return
+                }
+                strong.scene = .otp
+            }
         case .otp:
             guard let otp = phoneNumberTextField.text, !otp.isEmpty else {
                 errorLabel.text = enterOTPText
                 return
             }
-            verifyOTP(otp)
+            viewModel.verifyOTP(otp) { [weak self] user in
+                DispatchQueue.main.async {
+                    guard let strong = self, let user = user else {
+                        self?.errorLabel.text = otpVerifyErrorText
+                        return
+                    }
+                    strong.presentFeedViewController(for: user)
+                }
+            }
         }
+    }
+    
+    private func presentFeedViewController(for user: User) {
+        let controller: FeedViewController = .load(from: .feed)
+        controller.viewModel = FeedViewModel(user: user)
+        self.present(controller, animated: true)
     }
     
     private func emptyErrorLabel() {
         errorLabel.text = nil
-    }
-}
-
-// MARK: Move to ViewModel
-extension LoginViewController {
-    func sendOTP(to phoneNumber: String) {
-        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
-            guard let verificationID = verificationID, error != nil else {
-                print("CM: Failed to send OTP to \(phoneNumber).")
-                self.errorLabel.text = otpSendErrorText
-                return
-            }
-            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-            self.toggleScene(to: .otp)
-        }
-    }
-    
-    func verifyOTP(_ otp: String) {
-        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else {
-            print("CM: Verification ID not found in User Defaults.")
-            return
-        }
-
-        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: otp)
-        Auth.auth().signIn(with: credential) { authResult, error in
-            if let error = error {
-                self.errorLabel.text = otpVerifyErrorText
-                return
-            }
-            // Take the user to next flow
-            print("CM: Login successfull")
-        }
     }
 }
 
@@ -112,6 +102,3 @@ extension LoginViewController: UITextFieldDelegate {
         phoneNumberTextField.layer.borderWidth = 1
     }
 }
-
-
-// if Auth.auth.currentUser == nil -> logic for app coordinator
