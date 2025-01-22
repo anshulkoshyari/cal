@@ -8,7 +8,8 @@
 import UIKit
 
 enum StoryboardType: String {
-    case login = "Login"
+    case phoneNumber = "PhoneNumber"
+    case otp = "OTP"
     case feed = "Feed"
     
     func storyboard() -> UIStoryboard {

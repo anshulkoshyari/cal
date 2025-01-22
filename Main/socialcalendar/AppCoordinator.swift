@@ -10,7 +10,8 @@ import FirebaseAuth
 import UIKit
 
 enum RootScene {
-    case login
+    case phoneNumber
+    case otp
     case feed(User)
 }
 
@@ -28,7 +29,7 @@ class AppCoordinator {
         if let user = Auth.auth().currentUser {
             self.rootScene = .feed(user)
         } else {
-            self.rootScene = .login
+            self.rootScene = .phoneNumber
         }
         window.rootViewController = create(scene: rootScene)
         window.makeKeyAndVisible()
@@ -36,10 +37,16 @@ class AppCoordinator {
     
     private func create(scene: RootScene) -> UIViewController {
         switch scene {
-        case .login:
+        case .phoneNumber:
             print("CM: Set root window to login screen.")
-            let controller: LoginViewController = .load(from: .login)
-            controller.viewModel = LoginViewModel()
+            let controller: PhoneNumberViewController = .load(from: .phoneNumber)
+            controller.viewModel = PhoneNumberViewModel()
+            return UINavigationController(rootViewController: controller)
+        
+        case .otp:
+            print("CM: Set root window to OTP screen.")
+            let controller: OTPViewController = .load(from: .otp)
+            controller.viewModel = OTPViewModel()
             return UINavigationController(rootViewController: controller)
             
         case .feed(let user):
