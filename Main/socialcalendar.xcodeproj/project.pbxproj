@@ -7,24 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4167B6F32D3A983200643028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4167B6F22D3A983200643028 /* GoogleService-Info.plist */; };
+		41102CE92D3C03780064E10F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41102CE82D3C03780064E10F /* GoogleService-Info.plist */; };
+		4112FC782D40BF9E009F31BF /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112FC772D40BF9E009F31BF /* LoadingButton.swift */; };
+		4112FC7A2D40C165009F31BF /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112FC792D40C165009F31BF /* OTPViewController.swift */; };
+		4112FC7C2D40C172009F31BF /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112FC7B2D40C172009F31BF /* OTPViewModel.swift */; };
+		4112FC7E2D40C182009F31BF /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112FC7D2D40C182009F31BF /* OTP.storyboard */; };
+		4112FC812D40C80A009F31BF /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112FC802D40C80A009F31BF /* Keys.swift */; };
+		41662CF82D3FE69400A186A1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CF72D3FE69400A186A1 /* FeedViewController.swift */; };
+		41662CFA2D3FE6B300A186A1 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41662CF92D3FE6B300A186A1 /* Feed.storyboard */; };
+		41662CFC2D3FE7B600A186A1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */; };
+		41662CFE2D3FE99800A186A1 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662CFD2D3FE99800A186A1 /* PhoneNumberViewModel.swift */; };
 		41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E4E2D3A939800CAF61B /* AppDelegate.swift */; };
-		41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E522D3A939800CAF61B /* LoginViewController.swift */; };
-		41D74E562D3A939800CAF61B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E542D3A939800CAF61B /* Login.storyboard */; };
+		41D74E532D3A939800CAF61B /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D74E522D3A939800CAF61B /* PhoneNumberViewController.swift */; };
+		41D74E562D3A939800CAF61B /* PhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E542D3A939800CAF61B /* PhoneNumber.storyboard */; };
 		41D74E582D3A939900CAF61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E572D3A939900CAF61B /* Assets.xcassets */; };
 		41D74E5B2D3A939900CAF61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D74E592D3A939900CAF61B /* LaunchScreen.storyboard */; };
+		41DD4EA32D3FAF8800A01183 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */; };
+		41DD4EA62D3FBE6B00A01183 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */; };
 		8D8A047F36E286478AC2459B /* Pods_socialcalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07C3640D79C79EDD10EC023 /* Pods_socialcalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4167B6F22D3A983200643028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41102CE82D3C03780064E10F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4112FC772D40BF9E009F31BF /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		4112FC792D40C165009F31BF /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		4112FC7B2D40C172009F31BF /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		4112FC7D2D40C182009F31BF /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
+		4112FC802D40C80A009F31BF /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		41662CF72D3FE69400A186A1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		41662CF92D3FE6B300A186A1 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		41662CFD2D3FE99800A186A1 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		4167B6F42D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/PhoneNumber.storyboard; sourceTree = "<group>"; };
+		4167B6F52D3A9B2900643028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E4B2D3A939800CAF61B /* socialcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D74E4E2D3A939800CAF61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41D74E522D3A939800CAF61B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		41D74E552D3A939800CAF61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		41D74E522D3A939800CAF61B /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		41D74E572D3A939900CAF61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41D74E5A2D3A939900CAF61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D74E5C2D3A939900CAF61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5A9AA6DF262C683047F490B8 /* Pods-socialcalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.debug.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		6104C178501AF922D501A9B2 /* Pods-socialcalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialcalendar.release.xcconfig"; path = "Target Support Files/Pods-socialcalendar/Pods-socialcalendar.release.xcconfig"; sourceTree = "<group>"; };
 		C07C3640D79C79EDD10EC023 /* Pods_socialcalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialcalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +64,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4112FC762D40BF88009F31BF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4112FC772D40BF9E009F31BF /* LoadingButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		41662CF52D3FE61F00A186A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41D74E522D3A939800CAF61B /* PhoneNumberViewController.swift */,
+				41662CFD2D3FE99800A186A1 /* PhoneNumberViewModel.swift */,
+				4112FC792D40C165009F31BF /* OTPViewController.swift */,
+				4112FC7B2D40C172009F31BF /* OTPViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		41662CF62D3FE66B00A186A1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				41662CF72D3FE69400A186A1 /* FeedViewController.swift */,
+				41662CFB2D3FE7B600A186A1 /* FeedViewModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		4167B6F02D3A942700643028 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +103,10 @@
 		4167B6F12D3A943600643028 /* XibsAndStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				41D74E542D3A939800CAF61B /* Login.storyboard */,
 				41D74E592D3A939900CAF61B /* LaunchScreen.storyboard */,
+				41D74E542D3A939800CAF61B /* PhoneNumber.storyboard */,
+				4112FC7D2D40C182009F31BF /* OTP.storyboard */,
+				41662CF92D3FE6B300A186A1 /* Feed.storyboard */,
 			);
 			path = XibsAndStoryboards;
 			sourceTree = "<group>";
@@ -81,13 +133,26 @@
 		41D74E4D2D3A939800CAF61B /* socialcalendar */ = {
 			isa = PBXGroup;
 			children = (
-				4167B6F12D3A943600643028 /* XibsAndStoryboards */,
 				41D74E4E2D3A939800CAF61B /* AppDelegate.swift */,
-				41D74E522D3A939800CAF61B /* LoginViewController.swift */,
+				41DD4EA22D3FAF8800A01183 /* AppCoordinator.swift */,
+				4112FC802D40C80A009F31BF /* Keys.swift */,
+				4112FC762D40BF88009F31BF /* Helpers */,
+				41662CF62D3FE66B00A186A1 /* Feed */,
+				41662CF52D3FE61F00A186A1 /* Login */,
+				41DD4EA42D3FBE5500A01183 /* Extensions */,
+				4167B6F12D3A943600643028 /* XibsAndStoryboards */,
 				41D74E5C2D3A939900CAF61B /* Info.plist */,
-				4167B6F22D3A983200643028 /* GoogleService-Info.plist */,
+				41102CE82D3C03780064E10F /* GoogleService-Info.plist */,
 			);
 			path = socialcalendar;
+			sourceTree = "<group>";
+		};
+		41DD4EA42D3FBE5500A01183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41DD4EA52D3FBE6B00A01183 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9B46CB66080934AAF4501C01 /* Pods */ = {
@@ -150,7 +215,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 41D74E422D3A939800CAF61B;
 			productRefGroup = 41D74E4C2D3A939800CAF61B /* Products */;
@@ -167,10 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41662CFA2D3FE6B300A186A1 /* Feed.storyboard in Resources */,
 				41D74E5B2D3A939900CAF61B /* LaunchScreen.storyboard in Resources */,
-				4167B6F32D3A983200643028 /* GoogleService-Info.plist in Resources */,
+				41102CE92D3C03780064E10F /* GoogleService-Info.plist in Resources */,
 				41D74E582D3A939900CAF61B /* Assets.xcassets in Resources */,
-				41D74E562D3A939800CAF61B /* Login.storyboard in Resources */,
+				4112FC7E2D40C182009F31BF /* OTP.storyboard in Resources */,
+				41D74E562D3A939800CAF61B /* PhoneNumber.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,26 +289,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D74E532D3A939800CAF61B /* LoginViewController.swift in Sources */,
+				4112FC7C2D40C172009F31BF /* OTPViewModel.swift in Sources */,
+				4112FC782D40BF9E009F31BF /* LoadingButton.swift in Sources */,
+				41DD4EA32D3FAF8800A01183 /* AppCoordinator.swift in Sources */,
+				41D74E532D3A939800CAF61B /* PhoneNumberViewController.swift in Sources */,
+				4112FC812D40C80A009F31BF /* Keys.swift in Sources */,
+				4112FC7A2D40C165009F31BF /* OTPViewController.swift in Sources */,
+				41662CFC2D3FE7B600A186A1 /* FeedViewModel.swift in Sources */,
+				41662CF82D3FE69400A186A1 /* FeedViewController.swift in Sources */,
+				41DD4EA62D3FBE6B00A01183 /* UIViewController+Extension.swift in Sources */,
 				41D74E4F2D3A939800CAF61B /* AppDelegate.swift in Sources */,
+				41662CFE2D3FE99800A186A1 /* PhoneNumberViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41D74E542D3A939800CAF61B /* Login.storyboard */ = {
+		41D74E542D3A939800CAF61B /* PhoneNumber.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41D74E552D3A939800CAF61B /* Base */,
+				4167B6F42D3A9B2900643028 /* en */,
 			);
-			name = Login.storyboard;
+			name = PhoneNumber.storyboard;
 			sourceTree = "<group>";
 		};
 		41D74E592D3A939900CAF61B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41D74E5A2D3A939900CAF61B /* Base */,
+				4167B6F52D3A9B2900643028 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -383,7 +458,7 @@
 				INFOPLIST_FILE = socialcalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = PhoneNumber;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,7 +488,7 @@
 				INFOPLIST_FILE = socialcalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = PhoneNumber;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

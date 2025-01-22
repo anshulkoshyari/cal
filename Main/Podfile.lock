@@ -2,9 +2,6 @@ PODS:
   - Firebase/Auth (11.7.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 11.7.0)
-  - Firebase/Core (11.7.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (~> 11.7.0)
   - Firebase/CoreOnly (11.7.0):
     - FirebaseCore (~> 11.7.0)
   - FirebaseAnalytics (11.7.0):
@@ -107,7 +104,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Auth
-  - Firebase/Core
+  - FirebaseAnalytics
 
 SPEC REPOS:
   trunk:
@@ -144,6 +141,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: da780a1bf8bab73f2ae678947de12570adb8e0bf
+PODFILE CHECKSUM: 604cb86fbecacfa6c4603b8248d93a148c1cd18c
 
 COCOAPODS: 1.16.2

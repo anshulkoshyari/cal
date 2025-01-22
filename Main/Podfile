@@ -4,7 +4,7 @@ platform :ios, '13.0'
 target 'socialcalendar' do
   use_frameworks!
 
-  # Pods for socialcalendar
+  # Firebase pod
   pod 'Firebase/Auth'
-  pod 'Firebase/Core'
+  pod 'FirebaseAnalytics'
 end
