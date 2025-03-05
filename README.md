@@ -1,2 +1,2 @@
 # cal
-Your new social calendar 
+Social calendar (WIP)
